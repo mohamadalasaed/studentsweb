@@ -129,6 +129,8 @@
 
         function getStudents() {
             document.getElementById('container').innerHTML = '';
+            document.getElementById('ul').innerHTML = '';
+
             fetch('https://studentsapi.onrender.com/students')
                 .then(response => response.json())
                 .then(json => {
